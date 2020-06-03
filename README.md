@@ -1,2 +1,2 @@
 # WindowsTerminalProfile
-My setting.json for windows terminal
+My settings.json for windows terminal
