@@ -83,7 +83,7 @@
                 "guid": "{3e3f4f94-8882-477b-9c9b-3dd0518cd74a}",
                 "hidden": false,
                 "name": "HiperGator",
-                "commandline": "ssh ██████████@hpg.rc.ufl.edu",
+                "commandline": "ssh -o ServerAliveInterval=30 ██████████@hpg.rc.ufl.edu",
                 "icon": "D:/OneDrive/Pictures/Icons/Hipergator-Light.ico"
             },
             {
