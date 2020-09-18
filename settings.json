@@ -22,7 +22,8 @@
             "backgroundImage" : "D:/OneDrive/Pictures/Icons/Stamp.png",
             "backgroundImageOpacity" : 0.25,
             "backgroundImageAlignment" : "bottomRight",
-            "backgroundImageStretchMode" : "none"
+            "backgroundImageStretchMode" : "none",
+            "suppressApplicationTitle" : true
         },
         "list":
         [
@@ -41,6 +42,15 @@
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore",
                 "commandline": "pwsh.exe -nologo",
+                "startingDirectory": "%userprofile%"
+            },
+            {
+                // Make changes here to the pwsh.exe admin profile.
+                "guid": "{4555ce88-e5a3-473b-b068-e4e6c8ca3c7b}",
+                "hidden": false,
+                "name": "PowerShell (Elevated)",
+                "commandline": "pwsh.exe -nologo -command Start-Process -Verb RunAs -FilePath 'wt.exe' -ArgumentList '-p \"PowerShell\"'",
+                "icon": "ms-appx:///Images/Square44x44Logo.targetsize-32.png",
                 "startingDirectory": "%userprofile%"
             },
             {
